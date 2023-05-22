@@ -1,3 +1,5 @@
-from lib import sap
+from lib import act 
 
-sap.sap_login()
+sap = act.sap_launch()
+act.sap_login(sap)
+act.txn_vt02n(sap)
